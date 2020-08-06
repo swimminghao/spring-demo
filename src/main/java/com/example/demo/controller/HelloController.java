@@ -13,6 +13,7 @@ import org.springframework.web.bind.annotation.RestController;
 public class HelloController {
     @RequestMapping(value = "/hello",method = RequestMethod.GET)
     public String sayHello(){
+        System.out.println("nihao!");
         return "Hello SpringBoot 2.x!";
     }
 }
